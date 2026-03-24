@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+
+
+.Logo {
+	position: sticky;
+	background-color:aliceblue;
+	top: 0;
+}
+
+.b {
+	text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #FFFFFF;
+    background: #515151;
+    position: sticky;
+    top: 0;
+    text-align: center;
+  
+  
+}
+
+
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+.r {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  border: 2px solid green;
+  background: #315ACB
+}
