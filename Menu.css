@@ -256,9 +256,11 @@ video {
     font-size: 20px;
   }
 }
-/* Basic layout */
+* {
+  box-sizing: border-box;
+}
+
 .container {
-  width: 100%;
   max-width: 900px;
   margin: auto;
   padding: 20px;
@@ -267,15 +269,20 @@ video {
 .row {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .column {
-  flex: 1;
-  min-width: 300px; /* ensures equal size on all devices */
-  padding: 10px;
+  flex: 1 1 300px; /* her cihazda eşit ve responsive */
 }
 
-/* Form styling */
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Form elemanları */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -298,8 +305,8 @@ input[type=submit]:hover {
   background-color: #b71c1c;
 }
 
-/* Responsive behavior */
-@media screen and (max-width: 600px) {
+/* Mobil görünüm */
+@media (max-width: 600px) {
   .row {
     flex-direction: column;
   }
