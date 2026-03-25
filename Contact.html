@@ -4,199 +4,141 @@
 <meta charset="utf-8">
 <title>Home</title>
 <link href="Menu.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-body {
-    background-color: Black;
-}
-</style>
-</head>
 
-
-<body >
-<div class="M">
-<ul>
-	<li><h1 class="h1">TOYOTA CONTACT&nbsp;</h1>
-	</li>
-</ul>
-
-
-<ul>
-  <li><a href="index.html">Home</a></a></li>
-  <li><a href="About.html">About</a></a></li>
-  <li><a href="Models.html">Models</a></li>
-  <li><a href="Gallery.html">Gallery</a></li>
-  <li><a href="Contact.html">Contact</a></li>
-</ul>
-</div>
 <style>
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+/* Navigation */
+.M ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid black;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.M ul li {
+    display: inline-block;
+    margin: 10px;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
+.M a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
+/* Contact container */
 .container {
-  border-radius: 5px;
-  background-color:wheat;
-  padding: 10px;
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  
+    background-color: wheat;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
+/* Flexbox layout */
 .row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .column {
-  width: 50%;
-  padding: 10px;
+    flex: 1 1 300px;
 }
 
-.column img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Form elemanları */
+/* Inputs */
 input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 6px;
-  margin-bottom: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 6px;
+    margin-bottom: 16px;
 }
 
 input[type=submit] {
-  background-color: #d32f2f;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #b71c1c;
+    background-color: #45a049;
 }
 
-/* Mobil görünüm */
-@media (max-width: 768px) {
-  .column {
-    width: 100%;
-  }
-}
-
+/* Footer */
+.G {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
 }
 </style>
 </head>
+
 <body>
 
-<h2>Responsive Contact Section</h2>
-<p>Resize the browser window to see the effect.</p>
+<div class="M">
+    <ul>
+        <li><h1 class="h1" style="color:white;">TOYOTA CONTACT</h1></li>
+    </ul>
 
-<div class="container" style="flex: auto">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <p>Toyota support&nbsp; &nbsp;:</p>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="Pictures/ToyotaWhiteLogo.png" style="width:100%">
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Models.html">Models</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
 </div>
 
-</body>
+<div class="container">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Toyota Support</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="Pictures/ToyotaWhiteLogo.png" style="width:100%">
+        </div>
+
+        <div class="column">
+            <form action="/action_page.php">
+                <label>First Name</label>
+                <input type="text" name="firstname" placeholder="Your name..">
+
+                <label>Last Name</label>
+                <input type="text" name="lastname" placeholder="Your last name..">
+
+                <label>Country</label>
+                <select name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label>Subject</label>
+                <textarea name="subject" placeholder="Write something.." style="height:170px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+<body>
+   
+	</body>
 <div class="G">
-<ul class="G">
-	
-	<li><p>2026  IBRAHIM YUSUF </p></li>
-	  
-  
-</ul>
-	
+    <p>2026 IBRAHIM YUSUF</p>
 </div>
 
 
 </body>
-
 </html>
