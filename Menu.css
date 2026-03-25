@@ -221,3 +221,8 @@ div.gallery-item div.desc {
     width: calc(100% - 20px);
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
